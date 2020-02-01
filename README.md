@@ -1,2 +1,2 @@
-# CodeQuiz
-Coding Quiz to test your knowledge 
+# Web APIs Homework: Code Quiz 
+

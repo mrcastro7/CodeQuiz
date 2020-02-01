@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div id="main-timer">Timer :</div>
+    </div>
+
+    <div id="container">
+        <div id="start">Start Quiz!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none">
+            <h1 id="finalScore"></h1>
+            <form>
+                <input type="text" name="username" id="username" placeholder="username"/>
+                <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled> Save</button>
+            </form>
+            <div class="high-container">
+                <div id="highScores" class="flex-center flex-column">
+                    <h1 id="finalScore">High Scores</h1>
+                    <ul id="highScoresList"></ul>
+                </div>
+            </div>       
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
